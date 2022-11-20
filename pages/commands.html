@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Команды</title>
+    <title>Документация</title>
     <link rel="icon" href="../icon.png">
     <link rel="stylesheet" href="commands.css">
     <link rel="stylesheet" href="../index.css">
@@ -35,8 +35,8 @@
   <div class="openMenu noselect"><i class="fa fa-bars"></i></div>
   <ul class="mainMenu noselect">
     <li><a href="../index.html"><i class="fas fa-home"></i> Домой</a></li>
-    <li><a class="active" href="#"><i class="far fa-list-alt"></i> Команды</a></li>
-    <li><a href="https://discord.gg/JfHgMC7Fj3" target="_none"><i class="fas fa-headset"></i> Поддержка</a></li>
+    <li><a class="active" href="#"><i class="far fa-list-alt"></i> Документация</a></li>
+    <li><a href="https://discord.gg/tEVYdNUM2c" target="_none"><i class="fas fa-headset"></i> Поддержка</a></li>
     <li><a class="invite noselect" href="https://discord.com/api/oauth2/authorize?client_id=1012662863598456923&permissions=2147863552&scope=bot%20applications.commands" target="_none"><i class="fab fa-discord"></i> Добавить</a></li>
       <div class="closeMenu noselect"><i class="fa fa-times"></i></div>
   </ul>
@@ -54,10 +54,17 @@
         <div class="divider left"></div>
 
           <a class="title" href="#introduction">Введение</a>
-          
           <a class="section" href="#aboutthisbot">О боте</a>
-
           <div class="divider left"></div>
+          <a class="title" href="#gettingstarted">Начало работы</a>
+          <a class="section" href="#inbothelp">Помощь</a>
+          <a class="section" href="#addingthebot">Добавление бота</a>
+          <div class="divider left"></div>
+          <a class="title" href="#mechanics">Механики</a>
+          <a class="section" href="#wars">Войны</a>
+          <a class="section" href="#taxes">Налоги</a>
+          <a class="section" href="#diamonds">Алмазы</a>
+      
        <div class="space double"></div>
 
       </div>
@@ -65,9 +72,75 @@
       <div class="right-col">
           <h1 id="introduction">Введение</h1>
           
-          <p id="aboutthisbot">Betterh - Бот, который позволяет вам создавать свои государства. Документация по командам, а также список механик будет опубликован позже.</p> 
-     
-       
+          <h2 id="aboutthisbot">О боте</h2>
+          
+          <p>Betterh - Бот, который позволяет вам создавать свои государства. Бот имеет несколько уникальных систем, также бот использует <span class="codeBlock">/</span>-команды.</p>
+
+  <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+          <h1 id="gettingstarted">Начало работы</h1>
+          
+          <p>Начать работу с нашим ботом довольно просто, и мы сделали все возможное, чтобы упростить вам задачу.</p> 
+
+          <h1 id="inbothelp">Помощь</h1>
+
+          <p>Вы можете легко начать работу с ботом, прописав команду <span class="codeBlock">/help</span>.</p>
+
+          <p><b>Важно:</b> Вы должны согласиться с нашей политикой конфиденциальности (<span class="codeBlock">/privacypolicy</span>), а также с нашими условиями обслуживания (<span class="codeBlock">/tos</span>).</p>
+          
+          
+          <h2 id="addingthebot">Добавление бота</h2>
+          
+          <p>Чтобы добавить бота - <a href="https://discord.com/api/oauth2/authorize?client_id=1012662863598456923&permissions=2147863552&scope=bot%20applications.commands" target="_none">нажмите тут.</a><br><br>Вам также необходимо иметь право "Управлять сервером".</p>
+
+      <div class="divider" style="width:24%; margin:30px 0;"></div>
+    
+          <h1 id="mechanics">Механики</h1>
+          <div>
+            <ul>
+              <li class="collapsible" id="wars">Войны</li>
+              <div class="cmdCollapse">
+                Войны - одна из основных механик бота, Вам необходимо разобраться в системе урона, чтобы воевать наиболее эффективно.
+                <br>
+                В случае победы : <span class="codeBlock">ЗАБРАТЬ ATK/3 У АТАКУЮЩЕГО -> ЗАБРАТЬ DEF/3 У ЗАЩИЩАЮЩЕГОСЯ -> ВЫДАТЬ 1 ПОБЕДУ</span>
+                <br>
+                В случае поражения : <span class="codeBlock">ЗАБРАТЬ ATK/3 У АТАКУЮЩЕГО -> ЗАБРАТЬ DEF/3 У ЗАЩИЩАЮЩЕГОСЯ -> ВЫДАТЬ 1 ПОРАЖЕНИЕ</span>
+                <br>
+                Заметка: Если по итогу подсчёта, ATK/DEF меньше 0, то очки государства округляются до 0
+              </div>
+
+              <li class="collapsible" id="taxes">Налоги</li>
+              <div class="cmdCollapse">
+                Налоги - основной способ пополнения казны Вашего государства.
+                <br>
+                Выдача: <span class="codeBlock">12:00 (GMT+3)</span>
+                <br>
+                Территория: <span class="codeBlock">100$</span>
+                <br>
+                Фабрика: <span class="codeBlock">500$</span>
+                <br>
+                Город<span class="codeBlock">1000$</span>
+                <br>
+                Деревня: <span class="codeBlock">350$</span>
+                <br>
+                Заметка: Налоги накладываются друг на друга, это значит, что с одной территории Вы получити налог за 1 единицу территории, а также за 1 единицу любого строения (при наличии).
+              </div>
+
+              <li class="collapsible" id="diamonds">Алмазы</li>
+              <div class="cmdCollapse">
+                Алмазы - вторая валюта Вашего государства. Алмазы уникальны тем, что их курс обмена всегда разный.
+                <br>
+                Выдача: <span class="codeBlock">12:00 (GMT+3)</span>
+                <br>
+                Обновление: <span class="codeBlock">12:00 (GMT+3)</span>
+                <br>
+                Количество: <span class="codeBlock">1 - 3</span>
+                <br>
+                Заметка: Чтобы начать получать алмазы необходимо построить шахту, используя команду <span class="codeBlock">/turf mine</span>.
+              </div>
+            </ul>
+
+
   </div>
 </div>
 </div>

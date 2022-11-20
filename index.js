@@ -12,8 +12,6 @@ const title = document.getElementsByClassName('title');
 
 var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
-console.log("Loaded.")
-
 openMenu.addEventListener('click',show);
 closeMenu.addEventListener('click',close);
 
